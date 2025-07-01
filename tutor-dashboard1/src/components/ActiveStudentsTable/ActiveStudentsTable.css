@@ -1,0 +1,99 @@
+
+.active-table-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem; /* Add this line or reduce the value for less space */
+  justify-content: flex-start; /* Align items to the left */
+  margin-bottom: 0.5rem;
+}
+
+.active-table-header h2 {
+  margin: 0; /* Remove default margin for tighter grouping */
+  font-size: 1.4rem; /* Optional: adjust as needed */
+}
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.student-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.student-meta {
+  color: #6b7280;
+  font-size: 0.97rem;
+}
+
+.active-students-table th,
+.active-students-table td {
+  vertical-align: middle;
+}
+
+.active-students-table th:first-child,
+.active-students-table td:first-child {
+  width: 40px;
+  text-align: center;
+}
+
+.inactive-session {
+  color: #a4afc5;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.active-session {
+ color: #a4afc5;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.active-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  gap: 1rem;
+}
+
+.active-pagination-btn {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  color: #000307;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.active-pagination-btn:disabled {
+  color: #bdbdbd;
+  border-color: #e5e7eb;
+  cursor: not-allowed;
+}
+
+.active-pagination-pages {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.active-pagination-page {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.4rem 0.9rem;
+  font-size: 1rem;
+   color: #a4afc5;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.active-pagination-page.active,
+.active-pagination-page:hover {
+  background:  #fb8c00;
+  color: #fff;
+  border-color: #eff0f3;
+}
